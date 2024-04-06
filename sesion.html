@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Iniciar sesion/Registrarse</title>
+</head>
+<body>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+           <li><a href="index.html">Inicio</a></li>
+           <li>Iniciar sesión</li>
+        </ul>
+    </div>
+    <!-- end breadcumbs -->
+
+    <div class="container" id="container">
+        <div id="snackbar"></div>
+
+        <div class="form-container sign-up">
+            <form id="signup-form" method="post" action="./php/registrar_usuario.php">
+                <h1>Crear Cuenta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                </div>
+                <span>Utilice su correo electrónico para registrarse</span>
+                <input type="text" placeholder="Nombre Completo" name="nombre" required>
+                <input type="email" placeholder="Email" id="signup-email" name="email" required>
+                <input type="text" placeholder="direccion" name="direccion" required>
+                <input type="password" placeholder="Contraseña" name="contra" required>
+                <div class="g-recaptcha" data-sitekey="6LcU5qwpAAAAALsahdbjTFZNKdqi_TSQA7xpjoBm"></div>       
+                <button type="submit">Crear cuenta</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form id="login-form" method="post" action="./php/verificar_usuario.php">
+                <h1>Iniciar Sesion</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> -->
+                </div>
+                <span>Use su correo</span>
+                <input type="email" placeholder="Email" id="login-email" name="email" required>
+                <input type="password" placeholder="Contraseña" name="pass" required>
+                <div class="g-recaptcha" data-sitekey="6LcU5qwpAAAAALsahdbjTFZNKdqi_TSQA7xpjoBm"></div>
+                <a id="forgot-password">¿Olvidaste tu contraseña?</a>
+                <button type="submit">Iniciar Sesion</button>
+            </form>
+        </div>
+
+        
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenidos</h1>
+                    <img src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/305935996_445997794220603_2697507958715874722_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=NFgouFl4v6QAX-bixKX&_nc_ht=scontent-bog1-1.xx&oh=00_AfAjH_1853v7nu_M7kbiSTXx-p8XVUKcPEqipGJQCjm9hg&oe=654F3F02" alt="" class="logo" width="150px">
+                    <p>Regístrese con sus datos personales</p>
+                    <button class="hidden" id="login">Iniciar Sesion</button>
+                    <a href="index.html" class="button-link">Ir a inicio</a>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bienvenidos!!</h1>
+                    <img src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/305935996_445997794220603_2697507958715874722_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=NFgouFl4v6QAX-bixKX&_nc_ht=scontent-bog1-1.xx&oh=00_AfAjH_1853v7nu_M7kbiSTXx-p8XVUKcPEqipGJQCjm9hg&oe=654F3F02" alt="" class="logo" width="150px">
+                    <p>Ingrese sus datos personales</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                    <a href="index.html" class="button-link">Ir a inicio</a>
+                </div>
+                <!-- <div class="toggle-panel toggle-forgot">
+                    <h1>Recuperar Contraseña</h1>
+                    <p>Ingresa tu correo electrónico para recuperar tu contraseña</p>
+                    <form id="forgot-form">
+                        <input type="email" placeholder="Correo Electrónico" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!--  -->
+    <script src="./js/login.js"></script>
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

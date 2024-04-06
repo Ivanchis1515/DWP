@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Variables CSS */
+:root {
+    --greyLight: #f2f5fa;
+    --greyDark: #e7eaf4;
+    --purpleLight: #2c293f;
+    --purpleDark: #252234;
+    --neonGreen: #6eb81b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--greyLight);
+    margin: 0; /* Elimina el margen predeterminado del body */
+}
+
+#sideMenu {
+    background: var(--purpleLight);
+    width: 240px;
+    position: fixed; /* Cambia de absolute a fixed para mantenerlo fijo en la pantalla */
+    top: 0;
+    left: 0; /* Ajusta el left para que esté pegado al borde izquierdo */
+    bottom: 0;
+    transition: 1s;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    border-left: 5px solid transparent;
+    color: var(--greyDark);
+    transition: all 1s;
+}
+
+nav a.active {
+    background: var(--purpleDark);
+    border-left: 5px solid var(--neonGreen);
+}
+
+nav a:hover {
+    background: var(--purpleDark);
+    border-left: 5px solid var(--neonGreen);
+    text-decoration: none;
+    color: var(--greyDark);
+}
+
+nav a .fa {
+    color: var(--neonGreen);
+    width: 30px;
+}
+
+header {
+    background: #fff;
+    padding: 10px;
+    padding-left: 260px; /* Añade un padding-left para dar espacio al #sideMenu */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: space-between; /* Alinea los elementos a los extremos del header */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.search-area {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.search-area .fa {
+    color: var(--greyDark);
+    margin-right: 10px; /* Añade espacio a la derecha del icono */
+}
+
+.search-area input[type="text"] {
+    background: transparent;
+    border: none;
+    color: var(--neonGreen);
+    padding: 8px 10px;
+    flex: 1; /* Permite que el input ocupe todo el espacio restante */
+}
+
+.user-area {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.user-area a {
+    padding: 8px 20px; /* Ajusta el padding para dar espacio al contenido */
+    color: #aaa;
+    text-decoration: none; /* Asegúrate de que los enlaces no tengan subrayado */
+}
+
+.user-area a:hover {
+    text-decoration: none;
+}
+
+.user-area a.notification .circle {
+    position: relative;
+    background: var(--neonGreen);
+    color: var(--greyLight);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0px; /* Añade margen a la izquierda del círculo */
+}
+
+.container {
+    width: 60%; /* Ancho del contenedor */
+    margin: 450px; /* Centrar el contenedor horizontalmente */
+    margin-top: 50px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.container h1 {
+    text-align: center; /* Centrar el título */
+    color: var(--purpleDark); /* Color del texto */
+}
+
+.container label {
+    display: block; /* Hacer que el label ocupe todo el ancho disponible */
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar el título */
+}
+
+.container p {
+    text-align: center; /* Centrar el texto */
+    color: var(--greyDark); /* Color del texto */
+}
+
+.container a {
+    display: block; /* Hacer que los enlaces ocupen todo el ancho disponible */
+    text-align: center; /* Centrar el texto del enlace */
+    color: var(--neonGreen); /* Color del texto del enlace */
+    margin-top: 20px; /* Espacio superior */
+    text-decoration: none; /* Quitar subrayado */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.container a:hover {
+    color: var(--purpleDark); /* Cambiar color al pasar el cursor */
+}

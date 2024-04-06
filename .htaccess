@@ -1,0 +1,2 @@
+# Páginas de error personalizadas
+ErrorDocument 404 /DWP/error404.html

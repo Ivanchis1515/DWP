@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Electronica</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">Nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="computer.html">Computadoras</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="laptop.html">Laptops</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="product.html">Accesorios</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">Contactanos</a>
+                              </li>
+                              <!-- Buscador  -->
+                              <li class="nav-item d_none">
+                                 <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                 <div class="buscador" id="buscador">
+                                    <!-- búsqueda de productos -->
+                                    <input type="text" id="busqueda" placeholder="Buscar productos..." class="form-control">
+                                    <div id="contenedorResultados">
+                                       <ul id="resultados"></ul>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="nav-item d_none">
+                                 <a class="nav-link" href="sesion.html">Iniciar sesión</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+               <li data-target="#banner1" data-slide-to="3"></li>
+               <li data-target="#banner1" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Carrusel de imagenes -->
+            <div class="carousel-inner">
+               <!-- Contenido 1 -->
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <!-- <span>Electronica</span> -->
+                                 <h1>Computadoras y laptops</h1>
+                                 <p>
+                                    Sumérgete en un mundo de posibilidades con nuestra selección cuidadosamente curada de 
+                                    dispositivos informáticos que van más allá de las expectativas tradicionales.
+                                    Desde potentes equipos diseñados para llevar tu experiencia de gaming al siguiente nivel, 
+                                    hasta laptops ultraligeras que te acompañarán en tus aventuras diarias, tenemos todo lo que 
+                                    necesitas para potenciar tu vida digital.
+                                 </p>
+                                 <a href="#">Comprar ahora</a> <a href="contact.html">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure><img src="images/pct.png" alt="#"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- contenido 2 -->
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <!-- <span>Electronica</span> -->
+                                 <h1>Celulares</h1>
+                                 <p>
+                                    Sumérgete en un universo de innovación con nuestra selección de teléfonos inteligentes de vanguardia. 
+                                    Desde cámaras de última generación hasta pantallas deslumbrantes y un rendimiento incomparable, 
+                                    cada dispositivo está diseñado para ofrecerte una experiencia sin igual en la palma de tu mano.
+                                 </p>
+                                 <a href="#">Comprar ahora </a> <a href="contact.html">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <div class="container">
+                                       <img src="images/celulares.png" style="width: auto; height: auto; margin-bottom: 10px;" alt="#"/>
+                                    </div>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- contenido 3 -->
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <!-- <span>Electronica</span> -->
+                                 <h1>Accesorios</h1>
+                                 <p>
+                                    Explora nuestra amplia gama de accesorios cuidadosamente seleccionados, 
+                                    diseñados para complementar y mejorar tu experiencia tecnológica en todos los aspectos. 
+                                    Desde fundas elegantes hasta auriculares inalámbricos de alta fidelidad y cargadores rápidos, 
+                                    tenemos todo lo que necesitas para sacar el máximo partido a tus dispositivos.
+                                 </p>
+                                 <a href="#">Comprar ahora</a> <a href="contact.html">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <div class="container">
+                                       <img src="images/Accesorios.png" style="width: 70%; height: 60%;" alt="#"/>
+                                    </div>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- contenido 4 -->
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <!-- <span>Electronica</span> -->
+                                 <h1>Cámaras y fotografía</h1>
+                                 <p>
+                                    Explora nuestra amplia selección de cámaras y equipos fotográficos diseñados para satisfacer las necesidades de todos, 
+                                    desde aficionados entusiastas hasta profesionales de la imagen. Desde cámaras DSLR de alta gama hasta cámaras compactas 
+                                    y drones con capacidades cinematográficas, tenemos todo lo que necesitas para dar vida a tu creatividad.
+                                 </p>
+                                 <a href="#">Comprar ahora</a> <a href="contact.html">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <div class="container">
+                                       <img src="images/camaras.png" style="width: 70%; height: 60%;" alt="#"/>
+                                    </div>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- contenido 5 -->
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <!-- <span>Electronica</span> -->
+                                 <h1>Audio y video</h1>
+                                 <p>
+                                    Explora nuestra vibrante colección de equipos y accesorios diseñados para elevar tu experiencia auditiva y visual
+                                    a nuevas alturas. Desde sistemas de sonido envolvente hasta proyectores de cine en casa y auriculares de alta fidelidad, 
+                                    tenemos todo lo que necesitas para disfrutar de tus momentos musicales y cinematográficos favoritos con una calidad 
+                                    incomparable.
+                                 </p>
+                                 <a href="#">Comprar ahora </a> <a href="contact.html">Contactanos</a>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <div class="">
+                                       <img src="images/audio_video.png" style="width: 70%; height: 60%;" alt="#"/>
+                                    </div>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <!-- end banner -->
+
+      <!-- three_box -->
+      <div class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 mb-3">
+                  <div class="box_text">
+                     <i><img src="images/thr.png" alt="#"/></i>
+                     <h3>Computadoras</h3>
+                     <p>
+                        Ya sea que estés buscando potencia bruta, portabilidad sin concesiones o una combinación perfecta de ambos, 
+                        aquí encontrarás la herramienta perfecta para llevar tu experiencia informática al siguiente nivel.
+                        Descubre una nueva era de posibilidades con nuestras computadoras y laptops. 
+                        ¡Bienvenido al futuro de la informática!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/thr1.png" alt="#"/></i>
+                     <h3>Celulares</h3>
+                     <p>
+                        Con un equilibrio perfecto entre estilo, funcionalidad y rendimiento, nuestros teléfonos están listos para acompañarte 
+                        en cada paso del camino, elevando tu experiencia móvil a nuevas alturas.
+                        Explora nuestra colección hoy y descubre cómo la tecnología puede mejorar tu vida de maneras que nunca imaginaste. 
+                        ¡Bienvenido al futuro de la comunicación móvil!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/accesorios.svg" alt="#"/></i>
+                     <h3>Accesorios</h3>
+                     <p>
+                        Ya sea que desees proteger tu preciado equipo, optimizar su rendimiento o simplemente añadir un toque de estilo personal, 
+                        nuestra colección tiene algo para cada necesidad y estilo de vida.
+                        Con una atención meticulosa al detalle y una calidad excepcional en cada producto, puedes confiar en que nuestros 
+                        accesorios están diseñados para brindarte comodidad, durabilidad y un estilo incomparable.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/camera.svg" alt="#"/></i>
+                     <h3>Cámaras y fotografía</h3>
+                     <p>
+                        Ya sea que estés buscando documentar tus aventuras al aire libre, capturar momentos familiares o perseguir la perfección artística, 
+                        nuestra colección de cámaras y equipos fotográficos está aquí para inspirarte a explorar, crear y compartir tus historias visuales 
+                        con el mundo. Descubre el poder de la fotografía con nosotros y haz que cada clic cuente. 
+                        ¡Bienvenido al emocionante mundo de la imagen digital!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box_text">
+                     <i><img src="images/music.svg" alt="#"/></i>
+                     <h3>Audio y video</h3>
+                     <p>
+                        Ya sea que estés buscando crear tu propio estudio de grabación en casa, disfrutar de una experiencia cinematográfica en la comodidad 
+                        de tu sala de estar o simplemente mejorar tu disfrute musical diario, nuestra colección tiene todo lo que necesitas para llevar tu 
+                        pasión por la música y el video al siguiente nivel. Descubre el poder de la música y el cine con nosotros, y haz que cada momento 
+                        sea una experiencia inolvidable. ¡Bienvenido al mundo del entretenimiento de alta calidad!
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- three_box -->
+      
+      <!-- products -->
+      <div  class="products">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Hecha un vistazo a nuestros productos</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="our_products">
+                     <div class="row">
+                        <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="images/product1.png" alt="#"/></figure>
+                              <h3>Teclado mecanico con entrada coaxial</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="images/product2.png" alt="#"/></figure>
+                              <h3>Mouse mecánico</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="images/product3.png" alt="#"/></figure>
+                              <h3>Webcam portable con entrada USB</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="images/product4.png" alt="#"/></figure>
+                              <h3>Speakers</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="images/product5.png" alt="#"/></figure>
+                              <h3>Amplificador de señal Wi-fi</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4 margin_bottom1">
+                           <div class="product_box">
+                              <figure><img src="images/product6.png" alt="#"/></figure>
+                              <h3>Disco duro mecánico</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="product_box">
+                              <figure><img src="images/product7.png" alt="#"/></figure>
+                              <h3>RAM</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="product_box">
+                              <figure><img src="images/product8.png" alt="#"/></figure>
+                              <h3>Batería de Li-tio</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="product_box">
+                              <figure><img src="images/product9.png" alt="#"/></figure>
+                              <h3>Lector de discos</h3>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <a class="read_more" href="#">Ver más</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end products -->
+
+      <!-- laptop  section -->
+      <div class="laptop">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <p>Computadoras y laptops</p>
+                     <h2>Tienen 40% de descuento!</h2>
+                     <a class="read_more" href="#">¡Ver ahora!</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="laptop_box">
+                     <figure><img src="images/pc.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- end laptop  section -->
+
+      <!-- customer -->
+      <div class="customer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Opinión de los clientes</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide customer_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-9 offset-md-3">
+                                       <div class="test_box">
+                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <h4>Angel Luna</h4>
+                                          <p>
+                                             Esta pagina y sus productos so increibles. Jamás pense que llegarán a tener los articulos que quería y a mitad de precio :D
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-9 offset-md-3">
+                                       <div class="test_box">
+                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <h4>Ivanchis</h4>
+                                          <p>
+                                             Cuando me recomendaron está página no imaginaba que realmente eran ofertas increibles, solo es cuestion de buscar tu articulo 
+                                             siempre lo encontrarás aqui con las mejores opciones de envio
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-9 offset-md-3">
+                                       <div class="test_box">
+                                          <i><img src="images/cos.png" alt="#"/></i>
+                                          <h4></h4>
+                                          <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> -->
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end customer -->
+
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Contactanos ahora</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Nombre" type="type" name="Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Correo electronico" type="type" name="Email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Numero de telefono" type="type" name="Phone_Number">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Asunto" type="type" Message="Name">Asunto</textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Enviar mensaje</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <img class="logo1" src="images/logo1.png" alt="#"/>
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Sobre nosotros</h3>
+                     <ul class="about_us">
+                        <li>
+                           En nuestra tienda de electrónica, no somos solo vendedores de productos; somos entusiastas, apasionados por la innovación 
+                           y comprometidos con ofrecerte la mejor experiencia tecnológica posible. Nosotros entendemos que detrás de cada dispositivo 
+                           hay sueños, metas y momentos importantes de tu vida. Desde el primer día, nos hemos comprometido a ser más que una tienda; 
+                           queremos ser tu aliado en el mundo digital. Nos esforzamos por entender tus necesidades, anticiparnos a tus deseos y ofrecerte 
+                           soluciones que superen tus expectativas. Porque cuando tú ganas, nosotros también lo hacemos.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Contactanos</h3>
+                     <ul class="conta">
+                        <li>powrtch@gmail.com</li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <form class="bottom_form">
+                        <h3>Subscribirse a la pagina</h3>
+                        <input class="enter" placeholder="Ingresa tu correo" type="text" name="email2">
+                        <button class="sub_btn">Subscribirse</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2024 All Rights Reserved. Design by<a href="https://html.design/"> yo</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+</body>
+</html>
+
